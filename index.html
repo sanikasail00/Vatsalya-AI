@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sani - Health Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    
+
+    <div class="min-h-screen flex flex-col">
+        <nav class="bg-white shadow-sm py-4 px-6 md:px-10 flex justify-center sticky top-0 z-10">
+            <div id="nav-tabs" class="flex space-x-2 sm:space-x-4">
+                <button data-tab="maternal" class="nav-tab px-4 py-2 rounded-t-lg font-semibold transition-colors duration-300">
+                    <i data-lucide="stethoscope" class="inline-block w-4 h-4 mr-2"></i>
+                    Maternal Health
+                </button>
+                <button data-tab="nicu" class="nav-tab px-4 py-2 rounded-t-lg font-semibold transition-colors duration-300">
+                    <i data-lucide="monitor" class="inline-block w-4 h-4 mr-2"></i>
+                    NICU Dashboard
+                </button>
+                <button data-tab="infant" class="nav-tab px-4 py-2 rounded-t-lg font-semibold transition-colors duration-300">
+                    <i data-lucide="baby" class="inline-block w-4 h-4 mr-2"></i>
+                    Infant Care
+                </button>
+            </div>
+        </nav>
+
+        <main id="app-content" class="flex-grow p-4 md:p-8 max-w-7xl mx-auto w-full">
+            </main>
+
+        <footer class="bg-gray-100 text-gray-600 text-center p-4 text-sm mt-8">
+            &copy; <span id="current-year"></span> Sani. All rights reserved. Simulated data for demonstration purposes.
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
